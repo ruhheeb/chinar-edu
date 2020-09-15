@@ -1,0 +1,75 @@
+.training
+  padding: 68px 0 116px
+  text-align: center
+  background-color: $text-color-dark
+  &__uptitle
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: 0.13em
+    text-transform: uppercase
+    color: $secondary-color
+  &__title
+    font-style: normal
+    font-weight: 900
+    font-size: 53px
+    line-height: 79px
+    color: $light-color
+    text-transform: uppercase
+  &-slider
+    &__container
+      position: relative
+      padding: 0 430px
+      width: 1700px
+      margin: 0 auto
+    &__image
+      width: 944px
+      height: 498px
+    &__button
+      position: absolute
+      width: 42px
+      height: 42px
+      background-color: $secondary-color
+      border: none
+      z-index: 1000
+      &--next
+        top: 50%
+        right: 23%
+        transform: translateY(-50%)
+        background-image: url(../img/training/next-arrow.svg)
+        background-position: center
+        background-repeat: no-repeat
+      &--prev
+        top: 50%
+        left: 23%
+        transform: translateY(-50%)
+        background-image: url(../img/training/prev-arrow.svg)
+        background-position: center
+        background-repeat: no-repeat
+    &__item
+      position: relative
+      &-wrap
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 488px
+        transform: translate(-50%, -50%)
+        z-index: 23
+      &-button
+        padding: 3px 23px
+        width: 137px
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        text-decoration: none
+        border: 1px solid $light-color
+        color: $light-color
+    &__text
+      margin: 0 0 24px
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      color: $light-color
