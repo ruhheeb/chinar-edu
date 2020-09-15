@@ -6,9 +6,9 @@ $(document).ready(function () {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 60,
-      stretch: 0,
-      depth: 200,
+      rotate: 0,
+      stretch: 340,
+      depth: 400,
       modifier: 1,
       slideShadows: true,
     },
