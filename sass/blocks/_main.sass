@@ -16,14 +16,18 @@
   &__text-wrap
     margin-left: auto
     max-width: 589px
+  &__video
+    padding: 37px 0 37px 50px
 .video
-  max-width: 1826px
-  margin-left: auto
+  max-width: 1752px
+  margin: 0 auto
   position: relative
-  padding: 37px 0 37px 50px
-  background-image: url(../img/main/main-play.svg)
+  left: 0
+  right: 0
+  background-image: url(../img/main/main-play-bg.svg)
   background-repeat: no-repeat
   background-position: center
+  background-size: cover
   &__button-wrapper
     display: flex
     align-items: center
@@ -49,6 +53,8 @@
     background-color: $text-color-dark
     border-radius: 10px
     display: none
+    &--visible
+      display: block
   &__close-button
     position: absolute
     top: -19px
