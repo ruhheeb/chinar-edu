@@ -1,6 +1,7 @@
 @media (max-width: 1440px)
   .container
     max-width: 1200px
+
   // header block
   .navbar
     &::before
@@ -8,26 +9,48 @@
       background-size: cover
   .logo
     margin-right: 370px
+
   // main block
   .main
+    &__head
+      width: 760px
     &__video
       padding: 37px 0 37px 34px
   .video
     max-width: 1200px
     background-image: url(../img/main/main-play-bg-1440.svg)
-    background-size: cover
+
   // about block
   .about
     &__bottom
       margin-right: 220px
+
+  // training block
+  .training
+    &-slider
+      &__container
+        padding: 0 130px
+        max-width: 1000px
+        height: 370px
+      &__image
+        width: 700px
+        height: 100%
+      &__button
+        &--next
+          right: 11%
+        &--prev
+          left: 11%
+
   // update block
   .update
     &__wrapper
       max-width: 1200px
+
   // partners block
   .partners
     &__wrapper
       max-width: 1200px
+
   // contacts block
   .contacts
     &__wrapper
@@ -41,7 +64,183 @@
       min-height: 325px
     &__info
       min-height: 220px
+
   // footer block
   .footer
     &__wrapper
       max-width: 1200px
+    &-logo
+      margin-left: auto
+      margin-right: 290px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  // header block
+  .navbar
+    &__wrapper
+      padding: 10px 30px
+    &__social
+      padding: 0
+  .logo
+    margin-right: 280px
+  .social
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: start
+    width: 260px
+    &__title, &__line
+      display: none
+
+  // main block
+  .main
+    &__head
+      width: 650px
+  .video
+    max-width: 960px
+    background-image: url(../img/main/main-play-bg-1200.svg)
+
+  // about block
+  .about
+    &__bottom
+      margin-right: 100px
+
+  // training block
+  .training
+    &-slider
+      &__container
+        max-width: 960px
+      &__button
+        &--next
+          right: 9.5%
+        &--prev
+          left: 9.5%
+
+  // update block
+  .update
+    &__wrapper
+      max-width: 900px
+  .cards
+    flex-direction: column
+    align-items: center
+    &__item
+      margin-bottom: 30px
+      width: 500px
+    &__image-wrap
+      width: 100%
+    &__text-wrap
+      width: 400px
+
+  // partners block
+  .partners
+    &__wrapper
+      width: 960px
+    &-items
+      grid-template-rows: repeat(4, 1fr)
+      grid-template-columns: repeat(2, 1fr)
+
+  // contacts block
+  .contacts
+    &__wrapper
+      max-width: 960px
+    &__image-wrap
+      width: 900px
+      min-height: 258px
+
+  // footer block
+  .footer
+    &__wrapper
+      max-width: 960px
+    &-logo
+      margin-right: 190px
+
+@media (max-width: 992px)
+  .container
+    width: 92%
+
+  // header block
+  .navbar
+    &::before
+      background-image: url(../img/header/header-bg-992.jpg)
+  .logo
+    width: 110px
+
+  // main block
+  .main
+    &__text-wrap
+      margin: 0
+  .video
+    max-width: 92%
+    background-image: url(../img/main/main-play-bg-992.svg)
+    &__button-wrapper
+      max-width: 215px
+    &__button
+      width: 60px
+      height: 60px
+    &__text
+      font-size: 18px
+      line-height: 22px
+    &__wrap
+      top: -400px
+      width: 92%
+      height: 550px
+
+  // about block
+  .about
+    &__text
+      font-size: 20px
+      line-height: 32px
+    &__bottom
+      margin-right: 90px
+      max-width: 460px
+
+  // partners block
+  .partners
+    &__wrapper
+      max-width: 92%
+
+  // training block
+  .training
+    &__uptitle
+      margin-bottom: 0
+      font-size: 22px
+    &__title
+      margin-bottom: 45px
+      font-size: 45px
+    &-slider
+      &__container
+        padding: 0
+        max-width: 700px
+        height: 290px
+      &__image
+        width: 550px
+        height: 100%
+      &__button
+        width: 38px
+        height: 38px
+        &--next
+          right: 6%
+        &--prev
+          left: 6%
+      &__item-wrap
+        width: 450px
+      &__text
+        font-size: 14px
+        line-height: 20px
+  // contacts block
+  .contacts
+    &__image-wrap
+      display: none
+    &__head
+      margin-left: auto
+      width: 370px
+  // footer block
+  .footer
+    &__wrapper
+      max-width: 92%
+    &__bottom
+      flex-direction: column
+    &__menu
+      margin-bottom: 30px
+    &-logo
+      margin-right: 172px

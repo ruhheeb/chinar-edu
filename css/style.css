@@ -510,6 +510,12 @@ a:focus, button:focus {
   max-width: 235px;
 }
 
+.video__button {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
 .video__text {
   font-family: 'Monserrat', sans-serif;
   font-style: normal;
@@ -614,6 +620,8 @@ a:focus, button:focus {
 }
 
 .training__uptitle {
+  display: inline-block;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -624,6 +632,7 @@ a:focus, button:focus {
 }
 
 .training__title {
+  margin: 0 0 59px;
   font-style: normal;
   font-weight: 900;
   font-size: 53px;
@@ -634,8 +643,9 @@ a:focus, button:focus {
 
 .training-slider__container {
   position: relative;
-  padding: 0 330px;
-  width: 1400px;
+  padding: 0 230px;
+  max-width: 1400px;
+  height: 498px;
   margin: 0 auto;
 }
 
@@ -655,7 +665,7 @@ a:focus, button:focus {
 
 .training-slider__button--next {
   top: 50%;
-  right: 21%;
+  right: 14%;
   transform: translateY(-50%);
   background-image: url(../img/training/next-arrow.svg);
   background-position: center;
@@ -664,7 +674,7 @@ a:focus, button:focus {
 
 .training-slider__button--prev {
   top: 50%;
-  left: 21%;
+  left: 14%;
   transform: translateY(-50%);
   background-image: url(../img/training/prev-arrow.svg);
   background-position: center;
@@ -733,7 +743,7 @@ a:focus, button:focus {
 
 .cards__item {
   padding: 10px 15px;
-  max-width: 361px;
+  width: 361px;
   height: 398px;
   text-align: start;
   background-color: #FFFFFF;
@@ -1037,16 +1047,33 @@ a:focus, button:focus {
   .logo {
     margin-right: 370px;
   }
+  .main__head {
+    width: 760px;
+  }
   .main__video {
     padding: 37px 0 37px 34px;
   }
   .video {
     max-width: 1200px;
     background-image: url(../img/main/main-play-bg-1440.svg);
-    background-size: cover;
   }
   .about__bottom {
     margin-right: 220px;
+  }
+  .training-slider__container {
+    padding: 0 130px;
+    max-width: 1000px;
+    height: 370px;
+  }
+  .training-slider__image {
+    width: 700px;
+    height: 100%;
+  }
+  .training-slider__button--next {
+    right: 11%;
+  }
+  .training-slider__button--prev {
+    left: 11%;
   }
   .update__wrapper {
     max-width: 1200px;
@@ -1070,6 +1097,189 @@ a:focus, button:focus {
   }
   .footer__wrapper {
     max-width: 1200px;
+  }
+  .footer-logo {
+    margin-left: auto;
+    margin-right: 290px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .navbar__wrapper {
+    padding: 10px 30px;
+  }
+  .navbar__social {
+    padding: 0;
+  }
+  .logo {
+    margin-right: 280px;
+  }
+  .social {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 260px;
+  }
+  .social__title, .social__line {
+    display: none;
+  }
+  .main__head {
+    width: 650px;
+  }
+  .video {
+    max-width: 960px;
+    background-image: url(../img/main/main-play-bg-1200.svg);
+  }
+  .about__bottom {
+    margin-right: 100px;
+  }
+  .training-slider__container {
+    max-width: 960px;
+  }
+  .training-slider__button--next {
+    right: 9.5%;
+  }
+  .training-slider__button--prev {
+    left: 9.5%;
+  }
+  .update__wrapper {
+    max-width: 900px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards__item {
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  .cards__image-wrap {
+    width: 100%;
+  }
+  .cards__text-wrap {
+    width: 400px;
+  }
+  .partners__wrapper {
+    width: 960px;
+  }
+  .partners-items {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__wrapper {
+    max-width: 960px;
+  }
+  .contacts__image-wrap {
+    width: 900px;
+    min-height: 258px;
+  }
+  .footer__wrapper {
+    max-width: 960px;
+  }
+  .footer-logo {
+    margin-right: 190px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 92%;
+  }
+  .navbar::before {
+    background-image: url(../img/header/header-bg-992.jpg);
+  }
+  .logo {
+    width: 110px;
+  }
+  .main__text-wrap {
+    margin: 0;
+  }
+  .video {
+    max-width: 92%;
+    background-image: url(../img/main/main-play-bg-992.svg);
+  }
+  .video__button-wrapper {
+    max-width: 215px;
+  }
+  .video__button {
+    width: 60px;
+    height: 60px;
+  }
+  .video__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .video__wrap {
+    top: -400px;
+    width: 92%;
+    height: 550px;
+  }
+  .about__text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .about__bottom {
+    margin-right: 90px;
+    max-width: 460px;
+  }
+  .partners__wrapper {
+    max-width: 92%;
+  }
+  .training__uptitle {
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+  .training__title {
+    margin-bottom: 45px;
+    font-size: 45px;
+  }
+  .training-slider__container {
+    padding: 0;
+    max-width: 700px;
+    height: 290px;
+  }
+  .training-slider__image {
+    width: 550px;
+    height: 100%;
+  }
+  .training-slider__button {
+    width: 38px;
+    height: 38px;
+  }
+  .training-slider__button--next {
+    right: 6%;
+  }
+  .training-slider__button--prev {
+    left: 6%;
+  }
+  .training-slider__item-wrap {
+    width: 450px;
+  }
+  .training-slider__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contacts__image-wrap {
+    display: none;
+  }
+  .contacts__head {
+    margin-left: auto;
+    width: 370px;
+  }
+  .footer__wrapper {
+    max-width: 92%;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__menu {
+    margin-bottom: 30px;
+  }
+  .footer-logo {
+    margin-right: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */

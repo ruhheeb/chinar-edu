@@ -3,6 +3,8 @@
   text-align: center
   background-color: $text-color-dark
   &__uptitle
+    display: inline-block
+    margin-bottom: 10px
     font-style: normal
     font-weight: 500
     font-size: 24px
@@ -11,6 +13,7 @@
     text-transform: uppercase
     color: $secondary-color
   &__title
+    margin: 0 0 59px
     font-style: normal
     font-weight: 900
     font-size: 53px
@@ -20,8 +23,9 @@
   &-slider
     &__container
       position: relative
-      padding: 0 330px
-      width: 1400px
+      padding: 0 230px
+      max-width: 1400px
+      height: 498px
       margin: 0 auto
     &__image
       width: 944px
@@ -35,14 +39,14 @@
       z-index: 1000
       &--next
         top: 50%
-        right: 21%
+        right: 14%
         transform: translateY(-50%)
         background-image: url(../img/training/next-arrow.svg)
         background-position: center
         background-repeat: no-repeat
       &--prev
         top: 50%
-        left: 21%
+        left: 14%
         transform: translateY(-50%)
         background-image: url(../img/training/prev-arrow.svg)
         background-position: center
