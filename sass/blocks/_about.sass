@@ -1,6 +1,10 @@
 .about
   text-align: center
   padding: 150px 0 74px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
   &__title
     margin: 0 0 10px
     font-style: normal
@@ -23,13 +27,16 @@
     display: flex
     // justify-content: space-between
     align-items: center
-    margin: 0 0 0 auto
-    margin-right: 497px
+    // margin: 0 0 0 auto
+    // margin-right: 497px
+    margin-left: 260px
     max-width: 474px
   &__button
     margin-right: 60px
     padding: 18px 50px
     max-width: 202px
+    font-size: 14px
+    line-height: 21px
     text-decoration: none
     border: 1px solid $secondary-color
     color: $secondary-color

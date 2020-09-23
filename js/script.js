@@ -23,6 +23,29 @@ $(document).ready(function () {
     }
   });
 
+  // Mobile menu
+  var mobileButton = $('.menu-button');
+  var closeButton = $('.mobile-menu__close');
+  mobileButton.on('click', openMobileMenu);
+  closeButton.on('click', closeMobileMenu);
+
+  $(document).keyup(function (event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      closeMobileMenu(event);
+    }
+  });
+
+  function openMobileMenu(event) {
+    var mobileMenu = $('.navbar__mobile-menu');
+    mobileMenu.addClass('navbar__mobile-menu--visible');
+  };
+
+  function closeMobileMenu(event) {
+    event.preventDefault();
+    var mobileMenu = $('.navbar__mobile-menu');
+    mobileMenu.removeClass('navbar__mobile-menu--visible');
+  };
+
   // Training Slider
   var trainingSlider = new Swiper('.training-slider__container', {
     effect: 'coverflow',

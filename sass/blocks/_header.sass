@@ -24,9 +24,16 @@
     z-index: -55
   &__social
     padding: 30px 0
+  &__menu-button
+    display: none
+  &__mobile-menu
+    display: none
+  &__mobile-lang
+    margin-bottom: 40px
+
 .logo
-  margin-left: auto
-  margin-right: 692px
+  margin-right: auto
+  margin-left: 480px
   width: 137px
   height: 102px
 .social
@@ -53,6 +60,7 @@
     text-decoration: none
 .lang-panel
   justify-self: end
+  width: 80px
   &__link
     position: relative
     display: inline-block
@@ -70,3 +78,50 @@
         content: '/'
         position: absolute
         left: 27px
+.mobile-lang
+  &__link
+    display: inline-block
+    margin-right: 10px
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    text-decoration: none
+    text-transform: uppercase
+    text-decoration: none
+    text-transform: uppercase
+    color: $text-color-dark
+
+.mobile-menu
+  position: absolute
+  top: 25px
+  right: 55px
+  padding: 36px 24px 26px
+  width: 304px
+  background-color: $light-color
+  border-radius: 10px
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+  z-index: 111
+  &__close
+    position: absolute
+    top: 20px
+    right: 15px
+    width: 27px
+    height:
+    border: none
+    background-color: transparent
+  &__list
+    padding: 0
+    list-style: none
+  &__item
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+  &__link
+    text-decoration: none
+    font-style: normal
+    font-weight: 500px
+    font-size: 16px
+    line-height: 20px
+    color: $text-color-dark
