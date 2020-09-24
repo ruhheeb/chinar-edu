@@ -493,7 +493,7 @@ a:focus, button:focus {
   top: 25px;
   right: 55px;
   padding: 36px 24px 26px;
-  width: 304px;
+  width: 290px;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
@@ -1670,6 +1670,17 @@ a:focus, button:focus {
   .container {
     width: 92%;
   }
+  .navbar__wrapper {
+    width: 100%;
+    padding: 10px 15px;
+  }
+  .mobile-menu {
+    top: 10px;
+    right: 15px;
+  }
+  .main__head {
+    width: 300px;
+  }
   .about__title {
     font-size: 30px;
     line-height: 45px;
@@ -1701,6 +1712,15 @@ a:focus, button:focus {
   }
   .partners__title {
     font-size: 35px;
+  }
+  .contacts__wrapper {
+    width: 300px;
+  }
+  .contacts__head {
+    width: 300px;
+  }
+  .contacts__head-top {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
