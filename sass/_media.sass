@@ -93,6 +93,9 @@
   .video
     max-width: 960px
     background-image: url(../img/main/main-play-bg-1200.svg)
+    &__wrap
+      width: 900px
+      height: 600px
 
   // about block
   .about
@@ -182,9 +185,9 @@
       font-size: 18px
       line-height: 22px
     &__wrap
-      top: -400px
-      width: 92%
-      height: 550px
+      top: -460px
+      width: 700px
+      height: 450px
 
   // about block
   .about
@@ -322,7 +325,9 @@
   .video
     height: 130px
     background: $text-color-dark none
-
+    &__wrap
+      width: 540px
+      height: 350px
   // about block
   .about
     &__title
@@ -406,6 +411,17 @@
   .container
     width: 92%
 
+  // main block
+  .video
+    &__wrap
+      width: 420px
+      height: 300px
+    &__close-button
+      top: -18px
+      right: -16px
+    &__close-icon
+      width: 15px
+      height: 18px
   // footer block
   .footer
     &-logo
@@ -414,6 +430,7 @@
       order: 1
     &__follow
       display: none
+
 @media (max-width: 576px)
   .container
     width: 92%
@@ -504,6 +521,15 @@
 @media (max-width: 500px)
   .container
 
+  // main block
+  .video
+    &__wrap
+      padding: 10px
+      width: 90%
+      height: 220px
+    &__close-button
+      top: -15px
+      right: -14px
   // trainer block
   .training
     &-slider

@@ -1213,6 +1213,10 @@ a:focus, button:focus {
     max-width: 960px;
     background-image: url(../img/main/main-play-bg-1200.svg);
   }
+  .video__wrap {
+    width: 900px;
+    height: 600px;
+  }
   .about__bottom {
     margin-left: 260px;
   }
@@ -1302,9 +1306,9 @@ a:focus, button:focus {
     line-height: 22px;
   }
   .video__wrap {
-    top: -400px;
-    width: 92%;
-    height: 550px;
+    top: -460px;
+    width: 700px;
+    height: 450px;
   }
   .about__title {
     font-size: 45px;
@@ -1461,6 +1465,10 @@ a:focus, button:focus {
     height: 130px;
     background: #0E4749 none;
   }
+  .video__wrap {
+    width: 540px;
+    height: 350px;
+  }
   .about__title {
     font-size: 35px;
     line-height: 52px;
@@ -1549,6 +1557,18 @@ a:focus, button:focus {
 @media (max-width: 600px) {
   .container {
     width: 92%;
+  }
+  .video__wrap {
+    width: 420px;
+    height: 300px;
+  }
+  .video__close-button {
+    top: -18px;
+    right: -16px;
+  }
+  .video__close-icon {
+    width: 15px;
+    height: 18px;
   }
   .footer-logo {
     margin: 0;
@@ -1652,6 +1672,15 @@ a:focus, button:focus {
 }
 
 @media (max-width: 500px) {
+  .video__wrap {
+    padding: 10px;
+    width: 90%;
+    height: 220px;
+  }
+  .video__close-button {
+    top: -15px;
+    right: -14px;
+  }
   .training-slider__container {
     width: 420px;
   }
