@@ -409,43 +409,26 @@ a:focus, button:focus {
   margin-bottom: 40px;
 }
 
-.logo {
-  margin-right: auto;
-  margin-left: 450px;
-  width: 137px;
-  height: 102px;
-}
-
-.social {
+.navbar__contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 313px;
+  margin: 0 89px 0 auto;
+  width: 230px;
 }
 
-.social__title {
+.navbar__number {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #0E4749;
-}
-
-.social__line {
-  width: 48px;
-  height: 2px;
-  background-color: #0E4749;
-}
-
-.social__icon-wrap {
-  width: 161px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social__link {
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.13em;
   text-decoration: none;
+  color: #000000;
+}
+
+.logo {
+  width: 137px;
 }
 
 .lang-panel {
@@ -559,7 +542,60 @@ a:focus, button:focus {
 }
 
 .main__video {
-  padding: 37px 0 37px 50px;
+  padding: 37px 50px 50px 37px;
+}
+
+.trainers {
+  text-align: center;
+}
+
+.trainers__quantity {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.trainers__trainer, .trainers__coach {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0AFFFF;
+}
+
+.trainers__trainer::after {
+  content: '/';
+  position: relative;
+  left: 2px;
+  color: #0AFFFF;
+}
+
+.courses {
+  text-align: center;
+}
+
+.courses__quantity {
+  display: block;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.courses__course {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0AFFFF;
 }
 
 .video {
@@ -568,6 +604,9 @@ a:focus, button:focus {
   position: relative;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-image: url(../img/main/main-play-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -578,7 +617,7 @@ a:focus, button:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 235px;
+  width: 235px;
 }
 
 .video__button {
@@ -664,8 +703,8 @@ a:focus, button:focus {
 .about__bottom {
   display: flex;
   align-items: center;
-  margin-left: 260px;
-  max-width: 474px;
+  margin-left: 287px;
+  max-width: 490px;
 }
 
 .about__button {
@@ -683,10 +722,14 @@ a:focus, button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 230px;
 }
 
 .about__number {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.13em;
   text-decoration: none;
   color: #000000;
 }
@@ -1127,18 +1170,18 @@ a:focus, button:focus {
     background-image: url(../img/header/header-bg-1440.jpg);
     background-size: cover;
   }
-  .logo {
-    margin-left: 190px;
-  }
   .main__head {
     width: 760px;
   }
   .main__video {
-    padding: 37px 0 37px 34px;
+    padding: 37px 50px 37px 37px;
   }
   .video {
     max-width: 1200px;
     background-image: url(../img/main/main-play-bg-1440.svg);
+  }
+  .about__bottom {
+    margin-left: 285px;
   }
   .training-slider__container {
     padding: 0 130px;
@@ -1194,9 +1237,6 @@ a:focus, button:focus {
   .navbar__social {
     padding: 0;
   }
-  .logo {
-    margin-left: 140px;
-  }
   .social {
     flex-direction: column;
     flex-wrap: wrap;
@@ -1217,8 +1257,20 @@ a:focus, button:focus {
     width: 900px;
     height: 600px;
   }
-  .about__bottom {
-    margin-left: 260px;
+  .trainers__quantity {
+    font-size: 26px;
+  }
+  .trainers__trainer {
+    font-size: 18px;
+  }
+  .trainers__coach {
+    font-size: 18px;
+  }
+  .courses__quantity {
+    font-size: 26px;
+  }
+  .courses__course {
+    font-size: 18px;
   }
   .training-slider__container {
     max-width: 960px;
@@ -1292,7 +1344,7 @@ a:focus, button:focus {
   }
   .video {
     max-width: 92%;
-    background-image: url(../img/main/main-play-bg-992.svg);
+    background: #0E4749 none;
   }
   .video__button-wrapper {
     max-width: 215px;
@@ -1310,6 +1362,21 @@ a:focus, button:focus {
     width: 700px;
     height: 450px;
   }
+  .trainers__quantity {
+    font-size: 20px;
+  }
+  .trainers__trainer {
+    font-size: 14px;
+  }
+  .trainers__coach {
+    font-size: 14px;
+  }
+  .courses__quantity {
+    font-size: 20px;
+  }
+  .courses__course {
+    font-size: 14px;
+  }
   .about__title {
     font-size: 45px;
   }
@@ -1320,8 +1387,25 @@ a:focus, button:focus {
     font-size: 20px;
     line-height: 32px;
   }
+  .about__title {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  .about__img-wrap {
+    width: 327px;
+  }
+  .about__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
   .about__bottom {
-    max-width: 460px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0;
+  }
+  .about__button {
+    margin: 0;
   }
   .partners__wrapper {
     max-width: 92%;
@@ -1432,6 +1516,9 @@ a:focus, button:focus {
   .navbar__mobile-menu--visible {
     display: block;
   }
+  .navbar__contact {
+    display: none;
+  }
   .logo {
     width: 100px;
     height: 74px;
@@ -1469,25 +1556,8 @@ a:focus, button:focus {
     width: 540px;
     height: 350px;
   }
-  .about__title {
-    font-size: 35px;
-    line-height: 52px;
-  }
-  .about__img-wrap {
-    width: 327px;
-  }
-  .about__text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .about__bottom {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100px;
-    margin: 0;
-  }
-  .about__button {
-    margin: 0;
+  .trainers, .courses {
+    display: none;
   }
   .training__uptitle {
     margin-bottom: 15px;
