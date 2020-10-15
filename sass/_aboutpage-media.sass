@@ -2,6 +2,11 @@
   .container
     max-width: 1200px
 
+  // navbar block
+  .navbar
+    &-aboutpage
+      &::before
+        background-image: url(../img-aboutpage/aboutpage-header/header-bg-1440.jpg)
   // about block
   .about-aboutpage
     &__triangle-wrap
@@ -14,7 +19,7 @@
     &__text
       text-align: center
     &__bottom
-      margin-left: 260px
+      margin-left: 290px
 
   // education block
   .education
@@ -26,6 +31,12 @@
       &--third
         &_mb-3
           margin-bottom: 30px
+
+  .items
+    grid-template-columns: repeat(2, minmax(200px, 402px))
+    &__third
+      grid-template-columns: 847px
+
   .persons
     &__item
       width: 520px
@@ -62,6 +73,16 @@
   .info
     width: 700px
 
+  .items
+    grid-template-columns: 520px
+    &__second
+      grid-template-rows: 594px 320px
+      &-wrap
+        &:nth-child(1)
+          grid-row: 2 / 3
+    &__third
+      grid-template-columns: 520px
+
 @media (max-width: 768px)
   .container
     width: 92%
@@ -88,6 +109,12 @@
 
   .info
     width: 420px
+
+  .items
+    grid-template-columns: 1fr
+    &__third
+      grid-template-columns: 1fr
+      grid-template-rows: 594px
 
   .persons
     &__item
